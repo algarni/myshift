@@ -96,6 +96,11 @@ body {
 
 }
 
+.main-content{
+    position: fixed;
+    margin-right: 300px;
+}
+
 
 .panel-body .btn:not(.btn-block) {
     width: 120px;

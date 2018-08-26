@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block app_content %}
+    <div class="main-content">
+        <br>
+        <br>
+        <table class="table table-bordered">
+            <tr>
+                <td>اسم الموظف</td>
+                <td>الرقم الوظيفي</td>
+                <td>البريد الإلكتروني</td>
+                <td>إجراء</td>
+            </tr>
+            {% for emp in employees %}
+                <tr>
+                    <td>{{ emp.name }}</td>
+                    <td>{{ emp.employee_id }}</td>
+                    <td>{{ emp.email }}</td>
+                    <td>
+                        <a href="" class="btn btn-mini btn-default">تعديل</a>
+                        <a href="" class="btn btn-mini btn-danger">حذف</a>
+                    </td>
+                </tr>
+            {% endfor %}
+
+        </table>
+    </div>
+{% endblock %}
